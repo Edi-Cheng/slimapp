@@ -11,7 +11,7 @@ $app->get('/api/customers', function(Request $request, Response $response){
 
     try {
         // Get DB Object
-        $db = new db();
+        $db = new Database();
         // Connect
         $db = $db->connect();
         
@@ -35,7 +35,7 @@ $app->get('/api/customer/{id}', function(Request $request, Response $response){
 
     try {
         // Get DB Object
-        $db = new db();
+        $db = new Database();
         // Connect
         $db = $db->connect();
         
@@ -66,7 +66,7 @@ $app->post('/api/customer/add', function(Request $request, Response $response){
 
     try {
         // Get DB Object
-        $db = new db();
+        $db = new Database();
         // Connect
         $db = $db->connect();
         
@@ -109,7 +109,7 @@ $app->put('/api/customer/update/{id}', function(Request $request, Response $resp
 
     try {
         // Get DB Object
-        $db = new db();
+        $db = new Database();
         // Connect
         $db = $db->connect();
         
@@ -142,7 +142,7 @@ $app->delete('/api/customer/delete/{id}', function(Request $request, Response $r
 
     try {
         // Get DB Object
-        $db = new db();
+        $db = new Database();
         // Connect
         $db = $db->connect();
         

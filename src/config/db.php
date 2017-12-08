@@ -1,5 +1,5 @@
 <?php
-    class db {
+    class Database {
         // Properties
         private $dbhost = 'localhost';
         private $dbuser = 'root';
